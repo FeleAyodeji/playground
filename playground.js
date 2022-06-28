@@ -14,27 +14,27 @@ console.log(typeof feleProperties);*/
 
 //object
 
-/* var personalInfo = {
-    state : "Ekiti state" ,
-    city : "ijero world"
-};
-console.log(personalInfo);
-console.log(typeof personalInfo);
+//  var personalInfo = {
+//     state : "Ekiti state" ,
+//     city : "ijero world"
+// };
+// console.log(personalInfo);
+// console.log(typeof personalInfo);
 
-//date 
+ //date 
 
-const today = new Date();
-console.log(today);
-console.log(typeof today);
-console.log(today.length); */
+// const today = new Date();
+// console.log(today);
+// console.log(typeof today);
+// console.log(today.length); 
 
-/*console.log("bigboydee".charAt(0));
-console.log("databitcoin".length)
-console.log("hello" + " bitcoin" + " boy")
-console.log("bitcoin badboy fele".toUpperCase())*/
+// console.log("bigboydee".charAt(0));
+// console.log("databitcoin".length)
+// console.log("hello" + " bitcoin" + " boy")
+// console.log("bitcoin badboy fele".toUpperCase())
 
 // var shouldbeTrue = true;
-// if(shouldbeTrue = true){
+// if(shouldbeTrue = false ){
 //     console.log("800 bitcoin cash for fele ayodeji")
 // }
 // else{
@@ -159,7 +159,7 @@ console.log("bitcoin badboy fele".toUpperCase())*/
 // }
 //  console.log("the addition of the number is" , acctAdder(acct1 , acct2))
 
-// using afunction to change to a value in an array
+// using afunction to change  a value in an array
 // const myInfo = {name: "Fele Ayodeji" , age: 21} 
 
 // function changeAge(myObj){
@@ -223,22 +223,22 @@ console.log("bitcoin badboy fele".toUpperCase())*/
 //using the map function
 //writing an object in an array
 
-const users = [
-    {name: "deji" ,age:120},
-    {name:"gbemi" ,age:21},
-    {name:"syl",age:20}
-] 
-// const mapUserNames = (myArr) => 
-//     myArr.map((user) => user.name 
-//     )
+// const users = [
+//     {name: "deji" ,age:120},
+//     {name:"gbemi" ,age:21},
+//     {name:"syl",age:20}
+// ] 
+// // const mapUserNames = (myArr) => 
+// //     myArr.map((user) => user.name 
+// //     )
 
-// console.log(mapUserNames(users))  //using arrow function
+// // console.log(mapUserNames(users))  //using arrow function
 
-function mapUserNames (userNames){
-   return users.name
-}
-const output1 = users.map(mapUserNames)
-console.log(output1)  //without using arrow function
+// function mapUserNames(userName){
+//     return  userName.name
+// }
+// const output1 = users.map(mapUserNames)
+// console.log(output1)  //without using arrow function
 
 
 //double = [6,8,10,12,14,8,18]  //using map function
@@ -329,7 +329,7 @@ console.log(output1)  //without using arrow function
 // const output = details.map(justNames)
 // console.log(output)
 
-// //{100 : 2 , 120 : 1 , 90 : 1} using filter function to get the number of ages in the array
+// //{100 : 2 , 120 : 1 , 90 : 1} using reduce function to get the number of ages in the array
 
 // const output1 = details.reduce(function(acc , curr){
 //   if (acc [curr.age]){
@@ -343,13 +343,47 @@ console.log(output1)  //without using arrow function
 
 // console.log(output1)
 
-// //using filter function to get the ages less than 100 and map function to map out just the firstname with the age
+//using filter function to get the ages less than 100 and map function to map out just the firstname with the age
 
 // const output2 = details.filter((x)=> x.age > 90) //.map((x)=> x.firstName)     this map function will only print out the firstname of the filtered age
 
 // console.log(output2)
 
+// checking and setting default values for paramters in a function
 
+// function numMultiplier( x = 5 , y= 7 ){  // the number 5 and 7 are default values of the function. they will work as values of the function when no argument are to passed to function or one argument is missing
+//     return x * y
+// }
+
+// console.log(numMultiplier(9))
+
+// const bankAccount = {
+//     canSpendMoney: true,
+//     balance: 100
+// }
+
+// function purchaseItem(price , acct= bankAccount){
+//     if (acct.canSpendMoney) {
+//         acct.balance -= price;
+//         if (acct.balance <= 0) {
+//             acct.canSpendMoney = false
+//         }
+//         return true
+//     }
+//     else{
+//         return false
+//     }
+// }
+// console.log(purchaseItem(99))
+// console.log(purchaseItem(40, {canSpendMoney: false , balance:40 }))
+
+//using the builtin method arguments to log all arguments . it is also used to create an object for arguments passed into a function using the index style.
+
+function logAllArguments(x,y,z){
+    console.log(arguments)
+}
+ 
+logAllArguments(2,5,7)
 
 
 
